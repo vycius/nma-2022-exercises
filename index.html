@@ -56,6 +56,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://nma2022.vycius.lt/index.html" />
     <link rel="index" title="Indeksas" href="genindex.html" />
     <link rel="search" title="Paieška" href="search.html" />
+    <link rel="next" title="1. Hello World" href="exercises/1-hello-world.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="lt">
     
@@ -115,7 +116,24 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Užduotys
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="exercises/1-hello-world.html">
+   1. Hello World
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="exercises/2-everything-is-a-widget.html">
+   2. Everything is a widget
+  </a>
+ </li>
+</ul>
+
     </div>
 </nav></div>
         <div class="bd-sidebar__bottom">
@@ -269,12 +287,77 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#viesojo-transporto-duomenys">
+   Viešojo transporto duomenys
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#statiniai-duomenys-gtfs">
+     Statiniai duomenys (GTFS)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gtfs">
+       GTFS
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gtfs-duomenu-rinkiniai">
+       GTFS duomenų rinkiniai
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#struktura">
+       Struktūra
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dinaminai-duomenys-gtfs-realtime">
+     Dinaminai duomenys (GTFS Realtime)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gtfs-realtime">
+       GTFS Realtime
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Struktūra
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -286,6 +369,60 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#viesojo-transporto-duomenys">
+   Viešojo transporto duomenys
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#statiniai-duomenys-gtfs">
+     Statiniai duomenys (GTFS)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gtfs">
+       GTFS
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gtfs-duomenu-rinkiniai">
+       GTFS duomenų rinkiniai
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#struktura">
+       Struktūra
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dinaminai-duomenys-gtfs-realtime">
+     Dinaminai duomenys (GTFS Realtime)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gtfs-realtime">
+       GTFS Realtime
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Struktūra
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -296,6 +433,123 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="flutter-dirbtuves">
 <h1>„Flutter“ dirbtuvės<a class="headerlink" href="#flutter-dirbtuves" title="Nuoroda į šią antraštę">#</a></h1>
 <p>Hello</p>
+<section id="viesojo-transporto-duomenys">
+<h2>Viešojo transporto duomenys<a class="headerlink" href="#viesojo-transporto-duomenys" title="Nuoroda į šią antraštę">#</a></h2>
+<section id="statiniai-duomenys-gtfs">
+<h3>Statiniai duomenys (GTFS)<a class="headerlink" href="#statiniai-duomenys-gtfs" title="Nuoroda į šią antraštę">#</a></h3>
+<p>Ar kada susimastei iš kur atsiranda viešojo transporto maršrutai, atvykimo laikai, stotelės Trafi, Google Maps,
+Apple Maps ir kitose kelionių planavimo priemonėse?</p>
+<section id="gtfs">
+<h4>GTFS<a class="headerlink" href="#gtfs" title="Nuoroda į šią antraštę">#</a></h4>
+<p>Visi šie duomenys yra prieinami <a class="reference external" href="https://developers.google.com/transit/gtfs">GTFS</a> (<em>General Transit Feed
+Specification</em>) standartu, kuris yra ypač plačiai
+naudojamas ir yra skirtas teikti viešojo transporto statinę informaciją.</p>
+</section>
+<section id="gtfs-duomenu-rinkiniai">
+<h4>GTFS duomenų rinkiniai<a class="headerlink" href="#gtfs-duomenu-rinkiniai" title="Nuoroda į šią antraštę">#</a></h4>
+<p>GTFS duomenų rinkinys būna suspaustas į <code class="docutils literal notranslate"><span class="pre">.zip</span></code> failą susidedantį iš keleto <code class="docutils literal notranslate"><span class="pre">.csv</span></code> failų. Kiekvieną
+iš šių failų gali atsisiųsti ir į savo kompiuterį bei panagrinėti detaliau.</p>
+<table class="colwidths-auto table" id="gtfs-files">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">GTFS duomenų rinkinių pavyzdžiai Lietuvoje</span><a class="headerlink" href="#gtfs-files" title="Permalink to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Apimtis</p></th>
+<th class="head"><p>GTFS</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.stops.lt/vilnius/">Vilniaus m. sav.</a></p></td>
+<td><p><a class="reference external" href="https://www.stops.lt/vilnius/vilnius/gtfs.zip">GTFS</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.stops.lt/kaunas/">Kauno m. sav.</a></p></td>
+<td><p><a class="reference external" href="https://www.stops.lt/kaunas/kaunas/gtfs.zip">GTFS</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.stops.lt/klaipeda/">Klaipėdos m. sav.</a></p></td>
+<td><p><a class="reference external" href="https://www.stops.lt/klaipeda/klaipeda/gtfs.zip">GTFS</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.stops.lt/panevezys/">Panevėžio m. sav.</a></p></td>
+<td><p><a class="reference external" href="https://www.stops.lt/panevezys/panevezys/gtfs.zip">GTFS</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.stops.lt/druskininkai/">Druskininkų sav.</a></p></td>
+<td><p><a class="reference external" href="https://www.stops.lt/druskininkai/druskininkai/gtfs.zip">GTFS</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.visimarsrutai.lt/">Tolimasis susiekimas</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/LTSAR.zip">GTFS</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="struktura">
+<h4>Struktūra<a class="headerlink" href="#struktura" title="Nuoroda į šią antraštę">#</a></h4>
+<p>Kiekviename GTFS duomenų rinkinio faile saugoma informacija apie konkretų transporto sistemos elementą pvz.,
+stoteles (<a class="reference external" href="https://developers.google.com/transit/gtfs/reference#stopstxt"><em>stops.txt</em></a>), maršrutus
+(<a class="reference external" href="https://developers.google.com/transit/gtfs/reference#routestxt"><em>routes.txt</em></a>),
+reisus (<a class="reference external" href="https://developers.google.com/transit/gtfs/reference#tripstxt"><em>trips.txt</em></a>), atvykimo bei išvykimo laikus
+(<a class="reference external" href="https://developers.google.com/transit/gtfs/reference#stop_timestxt"><em>stop_times.txt</em></a>)ir t.t. Detalų failų sąrašą
+ir dokumentaciją rasite <a class="reference external" href="https://developers.google.com/transit/gtfs/reference">čia</a>.</p>
+<p>Taip pat svarbu suvokti ryšius tarp GTFS duomenų rinkinio failų.</p>
+<figure class="align-default" id="gtfs-files-relationships">
+<img alt="_images/gtfs-files-relationship.png" src="_images/gtfs-files-relationship.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Ryšiai tarp GTFS duomenų rinkinio failų. <a class="reference external" href="https://github.com/christianroman/df-gtfs">Šaltinis</a></span><a class="headerlink" href="#gtfs-files-relationships" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="dinaminai-duomenys-gtfs-realtime">
+<h3>Dinaminai duomenys (GTFS Realtime)<a class="headerlink" href="#dinaminai-duomenys-gtfs-realtime" title="Nuoroda į šią antraštę">#</a></h3>
+<p>Statiniai duomenys keleiviui suteikia bazinę informaciją, tad vien jų neužtenka, nes transporto priemonės genda,
+miestuose vyksta renginiai, gatvėse atsiranda kamščiai ar įvyksta avarijos. Siekiant reaguoti į trumpalaikiais pokyčius
+transporto sistemoje būtini dinaminiai duomenys. Dažnai šių duomenų šaltinių gali tapti viešajame transporte įrengta GPS
+įranga, keleivių skaičiavimo įranga, eismo stebėjimo sistemos.</p>
+<figure class="align-default" id="google-maps-dynamic-information">
+<img alt="_images/google-maps-dynamic-information.jpg" src="_images/google-maps-dynamic-information.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Dinaminiai viešojo transporto duomenys Google Maps. <a class="reference external" href="https://www.techspot.com/news/76700-google-maps-adds-new-commute-tab-music-streaming.html">Šaltinis</a></span><a class="headerlink" href="#google-maps-dynamic-information" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="gtfs-realtime">
+<h4>GTFS Realtime<a class="headerlink" href="#gtfs-realtime" title="Nuoroda į šią antraštę">#</a></h4>
+<p><a class="reference external" href="https://developers.google.com/transit/gtfs-realtime">GTFS Realtime</a> (<em>General Transit Feed Specification Realtime</em>) yra
+de facto standartinis atvirų duomenų formatas
+skirtas dinaminei viešojo transporto informacijai perduoti. Šis formatas papildo papildo GTFS teikiamą statinę
+informaciją.</p>
+</section>
+<section id="id1">
+<h4>Struktūra<a class="headerlink" href="#id1" title="Nuoroda į šią antraštę">#</a></h4>
+<p>GTFS Realtime duomenys yra prieinami
+<a class="reference external" href="https://developers.google.com/transit/gtfs-realtime/gtfs-realtime-proto">Protobuf</a>.</p>
+<p>Šio formato taip paprastai, kaip GTFS savo kompiuteryje panagrinėti nepavyks, nes duomenų formatas nėra suprantamas
+žmogui (pvz., priešingai nei JSON). Paprasčiausias būdas pasižaisti su šiuo formatu yra naudojant <a class="reference external" href="https://transport">https://transport</a>.
+<a class="reference external" href="http://data.gouv.fr/validation?type=gtfs-rt">data.gouv.fr/validation?type=gtfs-rt</a> ir suvedus GTFS ir GTFS-RT (GTFS Realtime nuorodas) pvz., <a class="reference external" href="https://www.stops">https://www.stops</a>.
+lt/vilnius/vilnius/gtfs.zip ir <a class="reference external" href="https://www.stops.lt/vilnius/gtfs_realtime.pb">https://www.stops.lt/vilnius/gtfs_realtime.pb</a> Tuomet <em>Decoded GTFS-RT feed</em> dalyje
+matysite kokie duomenys yra gražinami.</p>
+<table class="colwidths-auto table" id="gtfs-realtime-files">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">GTFS Realtime pavyzdžiai Lietuvoje</span><a class="headerlink" href="#gtfs-realtime-files" title="Permalink to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Apimtis</p></th>
+<th class="head"><p>GTFS Realtime</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.stops.lt/vilnius/">Vilniaus m. sav.</a></p></td>
+<td><p><a class="reference external" href="https://www.stops.lt/vilnius/gtfs_realtime.pb">GTFS Realtime</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.stops.lt/kaunas/">Kauno m. sav.</a></p></td>
+<td><p><a class="reference external" href="https://www.stops.lt/kaunas/gtfs_realtime.pb">GTFS Realtime</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.stops.lt/klaipeda/">Klaipėdos m. sav.</a></p></td>
+<td><p><a class="reference external" href="https://www.stops.lt/klaipeda/gtfs_realtime.pb">GTFS Realtime</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.stops.lt/panevezys/">Panevėžio m. sav.</a></p></td>
+<td><p><a class="reference external" href="https://www.stops.lt/panevezys/gtfs_realtime.pb">GTFS Realtime</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -325,6 +579,13 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="exercises/1-hello-world.html" title="kitas page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">kitas</p>
+        <p class="prev-next-title">1. Hello World</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
