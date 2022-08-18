@@ -1,0 +1,76 @@
+name: Build and Deploy
+on:
+  push:
+    branches-ignore:
+      - gh-pages
+
+jobs:
+  build:
+    name: Build page
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - uses: actions/cache@v3
+        with:
+          path: _build/.jupyter_cache
+          key: ${{ runner.os }}-jupyter-cache
+          restore-keys: |
+            ${{ runner.os }}-jupyter-cache
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - uses: BSFishy/pip-action@v1
+        with:
+          requirements: requirements.txt
+
+      - name: Build 🔧
+        run: make build
+
+      - uses: actions/upload-artifact@v3
+        if: always()
+        name: Upload gtfs-reports
+        with:
+          name: build-report
+          path: _build/html/reports
+
+      - run: touch _build/html/.nojekyll
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: page-html
+          path: _build/html/
+          retention-days: 3
+          if-no-files-found: error
+
+  deploy:
+    name: Deploy page
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: page-html
+          path: _build/html/
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.4
+        with:
+          branch: gh-pages
+          folder: _build/html/

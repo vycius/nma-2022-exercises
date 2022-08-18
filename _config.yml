@@ -1,0 +1,78 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: „Flutter“ dirbtuvės
+author: ""
+copyright: "2022"
+logo: logo.png
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: auto
+  timeout: 600
+#  stderr_output: warn
+
+parse:
+  myst_enable_extensions:
+    - html_admonition
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
+    - tasklist
+
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/vycius/nma-2022-exercises
+  branch: main
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_edit_page_button: true
+  use_issues_button: false
+  use_repository_button: true
+  home_page_in_navbar: false
+  extra_navbar: 'Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>'
+  baseurl: https://nma2022.vycius.lt
+  google_analytics_id: G-PSPT787FKK
+  extra_footer: |
+    <p>
+      Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>           
+    
+      El. paštas: <a href="mailto:karolis@vycius.lt" target="_blank">karolis@vycius.lt</a>
+    </p>
+    <div>
+    </div>
+    <p>
+      © 2022 Visas turinys (jei nenurodyta kitaip) yra licencijuotas pagal <a href="https://creativecommons.org/licenses/by/4.0//deed.lt">CC BY 4.0</a>
+    </p>
+  comments:
+    hypothesis: true
+
+launch_buttons:
+  binderhub_url: ""
+
+
+sphinx:
+  recursive_update: true
+  extra_extensions:
+    - sphinx_sitemap
+  config:
+    html_extra_path:
+      - 'robots.txt'
+    html_baseurl: 'https://nma2022.vycius.lt'
+    html_show_copyright: false
+    sitemap_url_scheme: "{link}"
+    language: lt
+    html_js_files:
+      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js
+
