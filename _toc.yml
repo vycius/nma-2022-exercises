@@ -3,3 +3,9 @@
 
 format: jb-book
 root: index
+
+parts:
+  - caption: Užduotys
+    chapters:
+      - file: exercises/1-hello-world
+      - file: exercises/2-everything-is-a-widget
