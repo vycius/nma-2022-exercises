@@ -40,7 +40,7 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         if: always()
-        name: Upload gtfs-reports
+        name: Upload html reports
         with:
           name: build-report
           path: _build/html/reports
