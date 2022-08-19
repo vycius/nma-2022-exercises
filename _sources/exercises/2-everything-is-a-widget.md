@@ -1,26 +1,33 @@
 # 2. Everything is a widget
-Pagrindinis Flutter principas
-> Everything is a widget
 
+Kaip keleiviui nepavėluoti į autobusą ir sužinoti kada autobusas išvyks iš stotelės?
+
+Siekdami keleiviui suteikti šią informaciją, pažintį su Flutter pradėkime nuo skirtingų Widget'ų, pvz.,
+[ListTile](https://www.youtube.com/watch?v=l8dj0yPBvgQ),
+[Text](https://api.flutter.dev/flutter/widgets/Text-class.html),
+[Padding](https://www.youtube.com/watch?v=oD5RtLhhubg),
+[Container](https://www.youtube.com/watch?v=c1xLMaTUWCY).
 
 ## Užduotis
-Pasižaiskime su Flutter widgetais. 
 
-## Rezultatas
+Iš įvairių Widge'tų sukonstruokite `TripStopTimeListTile`, kuri keleiviui suteiks informaciją apie išvykimo laiką
+([Stop times](https://developers.google.com/transit/gtfs/reference#stop_timestxt)),
+maršrutą ([Route](https://developers.google.com/transit/gtfs/reference#routestxt)),
+reisą ([Trip](https://developers.google.com/transit/gtfs/reference#tripstxt)).
 
+## Pavyzdinis rezultatas
 
-Nėra didelio skirtumo, kaip atrodo svarbiausia, kad pabandytumėte skirtingus Flutter platformos Widgetus pvz: `Column`, `Row`, `Image.asset`, `Text`, `Padding`, `Icon`, `RaisedButton`, `RaisedButton.icon`. Taip pat svarbu suprasti, kokiu būdu vieni widgetai yra konstruojami iš kitų widgetų.
+```{figure} /images/exercises/2-everything-is-a-widget-result.png
 
-<img src="https://raw.githubusercontent.com/nma-vasara-2020/uzduotys/master/uzduotys/screenshots/2-completed-task.png" width="300">
+Išvykimo iš stotelės laikų rezultato pavyzdys
+```
 
 ## Naudinga informacija
-- Kaip konstruojama widgetas ir kitų widgetų https://flutter.dev/docs/development/ui/layout
-- Image https://www.youtube.com/watch?v=7oIAs-0G4mw
-- Container https://www.youtube.com/watch?v=c1xLMaTUWCY
-- Padding https://www.youtube.com/watch?v=oD5RtLhhubg
+
+- Kaip konstruojama widget'as ir kitų widget'ų https://flutter.dev/docs/development/ui/layout
 - Widget catalog https://flutter.dev/docs/development/ui/widgets
 - Flutter widget index https://flutter.dev/docs/reference/widgets
 
+## Platesnė informacija
 
-## Papildoma informacija
 - Write your first Flutter app, part 1 https://flutter.dev/docs/get-started/codelab
