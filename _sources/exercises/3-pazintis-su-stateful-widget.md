@@ -1,4 +1,4 @@
-# 2. Pažintis su StatefulWidget
+# 3. Pažintis su StatefulWidget
 
 Kaip keleiviui paspaudus ant tab'o pakeisti ekraną? Tam reikia, kad Widget'as galėtų pats save keisti.
 
