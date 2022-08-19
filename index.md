@@ -1,17 +1,15 @@
 # „Flutter“ dirbtuvės
 
-Hello
+Ar kada susimastei iš kur atsiranda viešojo transporto maršrutai, atvykimo laikai, stotelės Trafi, Google Maps,
+Apple Maps ir kitose kelionių planavimo priemonėse? „Flutter“ dirbtuvių metu sieksime sužinoti apie viešojo
+transporto duomenų standartais, susipažinti su „Flutter“ ir išmokti kurti skirtingose platfomose veikiančias programas.
 
 ## Viešojo transporto duomenys
 
 ### Statiniai duomenys (GTFS)
 
-Ar kada susimastei iš kur atsiranda viešojo transporto maršrutai, atvykimo laikai, stotelės Trafi, Google Maps,
-Apple Maps ir kitose kelionių planavimo priemonėse?
-
-#### GTFS
-
-Visi šie duomenys yra prieinami [GTFS](https://developers.google.com/transit/gtfs) (_General Transit Feed
+Statiniai viešojo transporto duomenys yra prieinami [GTFS](https://developers.google.com/transit/gtfs) (_General
+Transit Feed
 Specification_) standartu, kuris yra ypač plačiai
 naudojamas ir yra skirtas teikti viešojo transporto statinę informaciją.
 
