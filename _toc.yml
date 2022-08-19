@@ -13,3 +13,4 @@ parts:
       - file: exercises/4-perejimas-tarp-ekranu
       - file: exercises/5-marsrutu-sarasas
       - file: exercises/6-stoteliu-zemelapis
+      - file: exercises/7-realus-laikas

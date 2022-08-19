@@ -73,9 +73,10 @@ GTFS Realtime duomenys yra prieinami
 [Protobuf](https://developers.google.com/transit/gtfs-realtime/gtfs-realtime-proto).
 
 Šio formato taip paprastai, kaip GTFS savo kompiuteryje panagrinėti nepavyks, nes duomenų formatas nėra suprantamas
-žmogui (pvz., priešingai nei JSON). Paprasčiausias būdas pasižaisti su šiuo formatu yra naudojant https://transport.
-data.gouv.fr/validation?type=gtfs-rt ir suvedus GTFS ir GTFS-RT (GTFS Realtime nuorodas) pvz., https://www.stops.
-lt/vilnius/vilnius/gtfs.zip ir https://www.stops.lt/vilnius/gtfs_realtime.pb Tuomet _Decoded GTFS-RT feed_ dalyje
+žmogui (pvz., priešingai nei JSON). Paprasčiausias būdas pasižaisti su šiuo formatu yra naudojant
+https://transport.data.gouv.fr/validation?type=gtfs-rt ir suvedus GTFS ir GTFS-RT (GTFS Realtime nuorodas)
+pvz., https://www.stops.lt/vilnius/vilnius/gtfs.zip ir https://www.stops.lt/vilnius/gtfs_realtime.pb Tuomet _Decoded
+GTFS-RT feed_ dalyje
 matysite kokie duomenys yra gražinami.
 
 ```{table} GTFS Realtime pavyzdžiai Lietuvoje
