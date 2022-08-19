@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>2. Pažintis su StatefulWidget &#8212; „Flutter“ dirbtuvės</title>
+    <title>4. Stotelių žemėlapis &#8212; „Flutter“ dirbtuvės</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,11 +53,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://nma2022.vycius.lt/exercises/3-pazintis-su-stateful-widget.html" />
+    <link rel="canonical" href="https://nma2022.vycius.lt/exercises/4-stoteliu-zemelapis.html" />
     <link rel="index" title="Indeksas" href="../genindex.html" />
     <link rel="search" title="Paieška" href="../search.html" />
-    <link rel="next" title="4. Stotelių žemėlapis" href="4-stoteliu-zemelapis.html" />
-    <link rel="prev" title="2. Everything is a widget" href="2-everything-is-a-widget.html" />
+    <link rel="prev" title="2. Pažintis su StatefulWidget" href="3-pazintis-su-stateful-widget.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="lt">
     
@@ -133,13 +132,13 @@ const thebe_selector_output = ".output, .cell_output"
    2. Everything is a widget
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="3-pazintis-su-stateful-widget.html">
    2. Pažintis su StatefulWidget
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="4-stoteliu-zemelapis.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    4. Stotelių žemėlapis
   </a>
  </li>
@@ -233,7 +232,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/vycius/nma-2022-exercises/edit/main/exercises/3-pazintis-su-stateful-widget.md"
+        <a href="https://github.com/vycius/nma-2022-exercises/edit/main/exercises/4-stoteliu-zemelapis.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -261,7 +260,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/exercises/3-pazintis-su-stateful-widget.md"
+        <a href="../_sources/exercises/4-stoteliu-zemelapis.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -349,7 +348,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>2. Pažintis su StatefulWidget</h1>
+                <h1>4. Stotelių žemėlapis</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -389,41 +388,34 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="pazintis-su-statefulwidget">
-<h1>2. Pažintis su StatefulWidget<a class="headerlink" href="#pazintis-su-statefulwidget" title="Nuoroda į šią antraštę">#</a></h1>
-<p>Kaip keleiviui paspaudus ant tab’o pakeisti ekraną? Tam reikia, kad Widget’as galėtų pats save keisti.</p>
-<p>Flutter turi dviejų tipų Widgetus:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html">StatelessWidget</a> - tokie kurie neturi vidinio
-stat’o ir po sukūrimo nesikeičia.</p></li>
-<li><p><a class="reference external" href="https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html">StatefulWidget</a> - tokie, kurie po sukūrimo gali
-save keisti (turi stat’ą).</p></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="stoteliu-zemelapis">
+<h1>4. Stotelių žemėlapis<a class="headerlink" href="#stoteliu-zemelapis" title="Nuoroda į šią antraštę">#</a></h1>
+<p>Kur keleiviui laukti atvykstančio autobuso? Siekiant keleiviui suteikti šią informaciją parodykime keleiviui
+stotelių žemėlapį.</p>
 <section id="uzduotis">
 <h2>Užduotis<a class="headerlink" href="#uzduotis" title="Nuoroda į šią antraštę">#</a></h2>
-<p>Pakeiskite MainScreen tipą iš StatelessWidget į StatefulWidget bei pasirūpinkite, kad
-<a class="reference external" href="https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html">BottomNavigationBar</a> galėtų pakeisti tab’ą
-(atributas: <em>currentIndex</em>).</p>
+<p>StopsMapTab atvaizduokite stotelių žemėlapį. Duomenis stotelių atvaizdavimui gali gauti iš <code class="docutils literal notranslate"><span class="pre">DatabaseService</span></code>
+funkcijos <code class="docutils literal notranslate"><span class="pre">getAllStops</span></code>. Stotelių marker’rius atvaizduoti padės <code class="docutils literal notranslate"><span class="pre">TransitMap</span></code>.</p>
 </section>
 <section id="pavyzdinis-rezultatas">
 <h2>Pavyzdinis rezultatas<a class="headerlink" href="#pavyzdinis-rezultatas" title="Nuoroda į šią antraštę">#</a></h2>
 <figure class="align-default" id="id1">
-<img alt="../_images/3-pazintis-su-stateful-widget.gif" src="../_images/3-pazintis-su-stateful-widget.gif" />
+<img alt="../_images/4-stoteliu-zemelapis.png" src="../_images/4-stoteliu-zemelapis.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Ekrano pasikeitimas paspaudus ant tab’o.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Stotelių žemėlapio pavyzdys</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="naudinga-informacija">
 <h2>Naudinga informacija<a class="headerlink" href="#naudinga-informacija" title="Nuoroda į šią antraštę">#</a></h2>
 <ul class="simple">
-<li><p>Adding interactivity to your Flutter app <a class="reference external" href="https://flutter.dev/docs/development/ui/interactive">https://flutter.dev/docs/development/ui/interactive</a></p></li>
+<li><p>FutureBuilder <a class="reference external" href="https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html">https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html</a></p></li>
 </ul>
 </section>
 <section id="platesne-informacija">
 <h2>Platesnė informacija<a class="headerlink" href="#platesne-informacija" title="Nuoroda į šią antraštę">#</a></h2>
 <ul class="simple">
-<li><p>How Stateful Widgets Are Used Best - Flutter Widgets 101 <a class="reference external" href="https://www.youtube.com/watch?v=AqCMFXEmf3w">https://www.youtube.com/watch?v=AqCMFXEmf3w</a></p></li>
+<li><p>Flutter Map <a class="reference external" href="https://pub.dev/packages/flutter_map">https://pub.dev/packages/flutter_map</a></p></li>
 </ul>
 </section>
 </section>
@@ -455,19 +447,12 @@ save keisti (turi stat’ą).</p></li>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="2-everything-is-a-widget.html" title="praeitas page">
+    <a class='left-prev' id="prev-link" href="3-pazintis-su-stateful-widget.html" title="praeitas page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">praeitas</p>
-            <p class="prev-next-title">2. Everything is a widget</p>
+            <p class="prev-next-title">2. Pažintis su StatefulWidget</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="4-stoteliu-zemelapis.html" title="kitas page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">kitas</p>
-        <p class="prev-next-title">4. Stotelių žemėlapis</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
