@@ -25,7 +25,7 @@ Ar pameni savo pirmąjį C++ Hello world ? Savo kelionę panašiai pradėsime ir
 
 1. Užsiregistruoti GitHub https://github.com/
 2. Prisijungti prie organizacijos https://github.com/nma-vasara-2020
-3. Susikurti savo GIT repositoriją iš templato https://github.com/nma-vasara-2020/flutter-movies-app-template (sukurkite
+3. Susikurti savo GIT repositoriją iš template https://github.com/nma-vasara-2020/flutter-movies-app-template (sukurkite
    repositoriją NMA organizacijoje bei priskirkite pavadinimą iš kurio būtų galima atskirti, kad tai jūsų
    repositorija :) )
 4. Įsidėti projektą iš GitHub repository į Android Studio https://code.tutsplus.com/tutorials/working-with-git-in-android-studio--cms-30514
