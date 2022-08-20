@@ -7,6 +7,7 @@ root: index
 parts:
   - caption: Užduotys
     chapters:
+      - file: exercises/0-pasiruosimas
       - file: exercises/1-hello-world
       - file: exercises/2-everything-is-a-widget
       - file: exercises/3-pazintis-su-stateful-widget
