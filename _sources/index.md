@@ -4,6 +4,11 @@ Ar kada susimastei iš kur atsiranda viešojo transporto maršrutai, atvykimo la
 Apple Maps ir kitose kelionių planavimo priemonėse? „Flutter“ dirbtuvių metu sieksime sužinoti apie viešojo
 transporto duomenų standartais, susipažinti su „Flutter“ ir išmokti kurti skirtingose platfomose veikiančias programas.
 
+```{figure} /images/bus-app.png
+
+Programėlės BUS pavyzdys
+```
+
 ## Viešojo transporto duomenys
 
 ### Statiniai duomenys (GTFS)
