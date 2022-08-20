@@ -43,7 +43,6 @@ html:
   home_page_in_navbar: false
   extra_navbar: 'Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>'
   baseurl: https://nma2022.vycius.lt
-  google_analytics_id: G-PSPT787FKK
   extra_footer: |
     <p>
       Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>           
@@ -55,8 +54,6 @@ html:
     <p>
       © 2022 Visas turinys (jei nenurodyta kitaip) yra licencijuotas pagal <a href="https://creativecommons.org/licenses/by/4.0//deed.lt">CC BY 4.0</a>
     </p>
-  comments:
-    hypothesis: true
 
 launch_buttons:
   binderhub_url: ""
