@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>4. Perėjimas tarp ekranų &#8212; „Flutter“ dirbtuvės</title>
+    <title>0. Pasiruošimas &#8212; „Flutter“ dirbtuvės</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,11 +53,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://nma2022.vycius.lt/exercises/4-perejimas-tarp-ekranu.html" />
+    <link rel="canonical" href="https://nma2022.vycius.lt/exercises/0-pasiruosimas.html" />
     <link rel="index" title="Indeksas" href="../genindex.html" />
     <link rel="search" title="Paieška" href="../search.html" />
-    <link rel="next" title="5. Maršrutų sąrašas" href="5-marsrutu-sarasas.html" />
-    <link rel="prev" title="3. Pažintis su StatefulWidget" href="3-pazintis-su-stateful-widget.html" />
+    <link rel="next" title="1. Hello World" href="1-hello-world.html" />
+    <link rel="prev" title="„Flutter“ dirbtuvės" href="../index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="lt">
     
@@ -123,8 +123,8 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="0-pasiruosimas.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    0. Pasiruošimas
   </a>
  </li>
@@ -143,8 +143,8 @@ const thebe_selector_output = ".output, .cell_output"
    3. Pažintis su StatefulWidget
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="4-perejimas-tarp-ekranu.html">
    4. Perėjimas tarp ekranų
   </a>
  </li>
@@ -253,7 +253,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/vycius/nma-2022-exercises/edit/main/exercises/4-perejimas-tarp-ekranu.md"
+        <a href="https://github.com/vycius/nma-2022-exercises/edit/main/exercises/0-pasiruosimas.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -281,7 +281,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/exercises/4-perejimas-tarp-ekranu.md"
+        <a href="../_sources/exercises/0-pasiruosimas.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -341,18 +341,18 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#uzduotis">
-   Užduotis
+  <a class="reference internal nav-link" href="#mums-reikes">
+   Mums reikės
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pavyzdinis-rezultatas">
-   Pavyzdinis rezultatas
+  <a class="reference internal nav-link" href="#id1">
+   Pasiruošimas
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naudinga-informacija">
-   Naudinga informacija
+  <a class="reference internal nav-link" href="#papildoma-informacija">
+   Papildoma informacija
   </a>
  </li>
 </ul>
@@ -364,7 +364,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>4. Perėjimas tarp ekranų</h1>
+                <h1>0. Pasiruošimas</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -375,18 +375,18 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#uzduotis">
-   Užduotis
+  <a class="reference internal nav-link" href="#mums-reikes">
+   Mums reikės
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pavyzdinis-rezultatas">
-   Pavyzdinis rezultatas
+  <a class="reference internal nav-link" href="#id1">
+   Pasiruošimas
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naudinga-informacija">
-   Naudinga informacija
+  <a class="reference internal nav-link" href="#papildoma-informacija">
+   Papildoma informacija
   </a>
  </li>
 </ul>
@@ -399,28 +399,45 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="perejimas-tarp-ekranu">
-<h1>4. Perėjimas tarp ekranų<a class="headerlink" href="#perejimas-tarp-ekranu" title="Nuoroda į šią antraštę">#</a></h1>
-<p>Dažnai norime patekti iš vieno ekrano į kitą. Už perėjimą tarp ekranų atsakingas <code class="docutils literal notranslate"><span class="pre">navigation_routes.dart</span></code>, o pačią
-tranziciją atlieka <code class="docutils literal notranslate"><span class="pre">Navigator</span></code>.</p>
-<section id="uzduotis">
-<h2>Užduotis<a class="headerlink" href="#uzduotis" title="Nuoroda į šią antraštę">#</a></h2>
-<p>Padaryk perėjimą iš stotelės ekrano (StopScreen) į reiso ekrano (TripScreen).</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="pasiruosimas">
+<h1>0. Pasiruošimas<a class="headerlink" href="#pasiruosimas" title="Nuoroda į šią antraštę">#</a></h1>
+<p>Ar pameni savo pirmąjį C++ Hello world ? Savo kelionę panašiai pradėsime ir su Flutter.</p>
+<section id="mums-reikes">
+<h2>Mums reikės<a class="headerlink" href="#mums-reikes" title="Nuoroda į šią antraštę">#</a></h2>
+<ul class="simple">
+<li><p>Flutter SDK <a class="reference external" href="https://flutter.dev/docs/get-started/install">https://flutter.dev/docs/get-started/install</a></p></li>
+<li><p>Android Studio <a class="reference external" href="https://developer.android.com/studio">https://developer.android.com/studio</a></p></li>
+<li><p>Android Studio Flutter ir Dart pluginai <a class="reference external" href="https://flutter.dev/docs/get-started/editor?tab=androidstudio">https://flutter.dev/docs/get-started/editor?tab=androidstudio</a></p></li>
+</ul>
 </section>
-<section id="pavyzdinis-rezultatas">
-<h2>Pavyzdinis rezultatas<a class="headerlink" href="#pavyzdinis-rezultatas" title="Nuoroda į šią antraštę">#</a></h2>
-<figure class="align-default" id="id1">
-<img alt="../_images/4-perejimas-tarp-ekranu.gif" src="../_images/4-perejimas-tarp-ekranu.gif" />
+<section id="id1">
+<h2>Pasiruošimas<a class="headerlink" href="#id1" title="Nuoroda į šią antraštę">#</a></h2>
+<ol class="simple">
+<li><p>Užsiregistruoti GitHub <a class="reference external" href="https://github.com/">https://github.com/</a></p></li>
+<li><p>Susikurti savo GIT repositoriją iš template <a class="reference external" href="https://github.com/nma-vasara-2020/flutter-movies-app-template">https://github.com/nma-vasara-2020/flutter-movies-app-template</a> (sukurkite
+repositoriją NMA organizacijoje bei priskirkite pavadinimą iš kurio būtų galima atskirti, kad tai jūsų
+repositorija :) )</p></li>
+<li><p>Įsidėti projektą iš GitHub repository į Android
+Studio <a class="reference external" href="https://code.tutsplus.com/tutorials/working-with-git-in-android-studio--cms-30514">https://code.tutsplus.com/tutorials/working-with-git-in-android-studio–cms-30514</a></p></li>
+<li><p>Pervadinkite vieną iš <code class="docutils literal notranslate"><span class="pre">assets/sqlite</span></code> direktorijoje esančių failų į <code class="docutils literal notranslate"><span class="pre">db.sqlite</span></code>;</p></li>
+<li><p>Faile <code class="docutils literal notranslate"><span class="pre">lib/constants.dart</span></code> kintajam <code class="docutils literal notranslate"><span class="pre">defaultLatLng</span></code> priskirkite savo regiono centro koordinates pvz.,
+<code class="docutils literal notranslate"><span class="pre">vilniusLatLng</span></code>;</p></li>
+<li><p>Sėkmingai pasileisti mobiliąją programėlę. Pasileidę turėtumėte matyti tokį vaizdą.</p></li>
+</ol>
+<figure class="align-default" id="id2">
+<img alt="../_images/0-pasiruosimas.png" src="../_images/0-pasiruosimas.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Perėjimas tarp stotelės ir reiso ekranų</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Paleistos programėlės pavyzdys</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="naudinga-informacija">
-<h2>Naudinga informacija<a class="headerlink" href="#naudinga-informacija" title="Nuoroda į šią antraštę">#</a></h2>
+<section id="papildoma-informacija">
+<h2>Papildoma informacija<a class="headerlink" href="#papildoma-informacija" title="Nuoroda į šią antraštę">#</a></h2>
 <ul class="simple">
-<li><p>FutureBuilder <a class="reference external" href="https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html">https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html</a></p></li>
-<li><p>GTFS routes.txt <a class="reference external" href="https://developers.google.com/transit/gtfs/reference#routestxt">https://developers.google.com/transit/gtfs/reference#routestxt</a></p></li>
+<li><p>Greitas gidas apie Android Studio ir Flutter <a class="reference external" href="https://flutter.dev/docs/development/tools/android-studio">https://flutter.dev/docs/development/tools/android-studio</a></p></li>
+<li><p>Greitas versijavimo sistemos GIT pradžiamokslis <a class="reference external" href="https://rogerdudler.github.io/git-guide/">https://rogerdudler.github.io/git-guide/</a></p></li>
+<li><p>Lab: Write your first Flutter app <a class="reference external" href="https://flutter.dev/docs/get-started/codelab">https://flutter.dev/docs/get-started/codelab</a></p></li>
+<li><p>Cookbook: Useful Flutter samples <a class="reference external" href="https://flutter.dev/docs/cookbook">https://flutter.dev/docs/cookbook</a></p></li>
 </ul>
 </section>
 </section>
@@ -452,17 +469,17 @@ tranziciją atlieka <code class="docutils literal notranslate"><span class="pre"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="3-pazintis-su-stateful-widget.html" title="praeitas page">
+    <a class='left-prev' id="prev-link" href="../index.html" title="praeitas page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">praeitas</p>
-            <p class="prev-next-title">3. Pažintis su StatefulWidget</p>
+            <p class="prev-next-title">„Flutter“ dirbtuvės</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="5-marsrutu-sarasas.html" title="kitas page">
+    <a class='right-next' id="next-link" href="1-hello-world.html" title="kitas page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">kitas</p>
-        <p class="prev-next-title">5. Maršrutų sąrašas</p>
+        <p class="prev-next-title">1. Hello World</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
