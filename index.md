@@ -4,7 +4,8 @@ Ar kada susimastei iš kur atsiranda viešojo transporto maršrutai, atvykimo la
 Apple Maps ir kitose kelionių planavimo priemonėse? „Flutter“ dirbtuvių metu sieksime sužinoti apie viešojo
 transporto duomenų standartais, susipažinti su „Flutter“ ir išmokti kurti skirtingose platfomose veikiančias programas.
 
-Kurso metu tobulinsime viešojo transporto programėlę „BUS“.
+Kurso metu tobulinsime viešojo transporto programėlę „BUS“. Pavyzdinį variantą, kaip ji galės atrodyti dirbtuvių 
+pabaigoje galite rasti http://bus.vycius.lt
 
 ```{figure} /images/bus-app.png
 ---
