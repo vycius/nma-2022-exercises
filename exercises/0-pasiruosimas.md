@@ -11,11 +11,8 @@ Ar pameni savo pirmąjį C++ Hello world ? Savo kelionę panašiai pradėsime ir
 ## Pasiruošimas
 
 1. Užsiregistruoti GitHub https://github.com/
-2. Susikurti savo GIT repositoriją iš template https://github.com/nma-vasara-2020/flutter-movies-app-template (sukurkite
-   repositoriją NMA organizacijoje bei priskirkite pavadinimą iš kurio būtų galima atskirti, kad tai jūsų
-   repositorija :) )
-3. Įsidėti projektą iš GitHub repository į Android
-   Studio https://code.tutsplus.com/tutorials/working-with-git-in-android-studio--cms-30514
+2. Susikurti savo GIT repositoriją iš template https://github.com/vycius/nma-2022-flutter-bus-app-template
+3. Įsidėti projektą iš GitHub repository į Android Studio
 4. Pervadinkite vieną iš `assets/sqlite` direktorijoje esančių failų į `db.sqlite`;
 5. Faile `lib/constants.dart` kintajam `defaultLatLng` priskirkite savo regiono centro koordinates pvz.,
    `vilniusLatLng`;
